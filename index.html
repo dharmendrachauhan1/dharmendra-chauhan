@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Process Flow">
+    <mxGraphModel dx="1088" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Stage 1 -->
+        <mxCell id="stage1" value="1. Trigger from New Project Announcement\nTAT: Immediate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="40" width="240" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stage 2 -->
+        <mxCell id="stage2" value="2. Mob Budget Allocation (Vidya)\nDependent on: 1\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="140" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage1ToStage2" edge="1" source="stage1" target="stage2" parent="1" />
+        
+        <!-- Stage 3 -->
+        <mxCell id="stage3" value="3. Create Project in Projectbase (Vidya)\nDependent on: 2\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="240" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage2ToStage3" edge="1" source="stage2" target="stage3" parent="1" />
+        
+        <!-- Stage 4 -->
+        <mxCell id="stage4" value="4. Map Resources in Projectbase (Vidya)\nDependent on: 3\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="340" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage3ToStage4" edge="1" source="stage3" target="stage4" parent="1" />
+        
+        <!-- Stage 5 -->
+        <mxCell id="stage5" value="5. Add Mob Budget in Projectbase (Amendment Manager)\nDependent on: 4\nTAT: 48 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="440" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage4ToStage5" edge="1" source="stage4" target="stage5" parent="1" />
+        
+        <!-- Stage 6 -->
+        <mxCell id="stage6" value="6. Circulate Pre Tender Data (Vidya)\nDependent on: 5\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="540" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage5ToStage6" edge="1" source="stage5" target="stage6" parent="1" />
+        
+        <!-- Stage 7 -->
+        <mxCell id="stage7" value="7. Kick Off Meeting (Business)\nDependent on: 6\nTAT: 48 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="300" y="640" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage6ToStage7" edge="1" source="stage6" target="stage7" parent="1" />
+        
+        <!-- Stage 8 -->
+        <mxCell id="stage8" value="8. Kick Off Meeting Attendees List\nDependent on: 7\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="300" y="740" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage7ToStage8" edge="1" source="stage7" target="stage8" parent="1" />
+        
+        <!-- Stage 9 -->
+        <mxCell id="stage9" value="9. Circulate Grid View without Price (Tender Manager)\nDependent on: 8\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="840" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage8ToStage9" edge="1" source="stage8" target="stage9" parent="1" />
+        
+        <!-- Stage 10 -->
+        <mxCell id="stage10" value="10. Circulate IDC Budget to PL (Tender Manager)\nDependent on: 9\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="940" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage9ToStage10" edge="1" source="stage9" target="stage10" parent="1" />
+        
+        <!-- Stage 11 -->
+        <mxCell id="stage11" value="11. IDC Budget Preparation & Submission to MD (PL)\nDependent on: 10\nTAT: 48 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1040" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage10ToStage11" edge="1" source="stage10" target="stage11" parent="1" />
+        
+        <!-- Stage 12 -->
+        <mxCell id="stage12" value="12. Final Budget Submission to CC & Amendment Manager (Tender Manager)\nDependent on: 11\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1140" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage11ToStage12" edge="1" source="stage11" target="stage12" parent="1" />
+        
+        <!-- Stage 13 -->
+        <mxCell id="stage13" value="13. CC Approval (Vidya)\nDependent on: 12\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1240" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage12ToStage13" edge="1" source="stage12" target="stage13" parent="1" />
+        
+        <!-- Stage 14 -->
+        <mxCell id="stage14" value="14. Final Budget Submission to MD (Vidya)\nDependent on: 13\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1340" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage13ToStage14" edge="1" source="stage13" target="stage14" parent="1" />
+        
+        <!-- Stage 15 -->
+        <mxCell id="stage15" value="15. Final Budget MD Approval (EA)\nDependent on: 14\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1440" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage14ToStage15" edge="1" source="stage14" target="stage15" parent="1" />
+        
+        <!-- Stage 16 -->
+        <mxCell id="stage16" value="16. Final IDC Budget MD Approval (EA)\nDependent on: 12\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1540" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage12ToStage16" edge="1" source="stage12" target="stage16" parent="1" />
+        
+        <!-- Stage 17 -->
+        <mxCell id="stage17" value="17. Final Budget Rollout (Vidya)\nDependent on: 16\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1640" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage16ToStage17" edge="1" source="stage16" target="stage17" parent="1" />
+        
+        <!-- Stage 18 -->
+        <mxCell id="stage18" value="18. Resource Planning in Projectbase (Amendment Manager)\nDependent on: 13\nTAT: 48 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1740" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage13ToStage18" edge="1" source="stage13" target="stage18" parent="1" />
+        
+        <!-- Stage 19 -->
+        <mxCell id="stage19" value="19. Final Budget in Projectbase (Amendment Manager)\nDependent on: 18\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1840" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage18ToStage19" edge="1" source="stage18" target="stage19" parent="1" />
+        
+        <!-- Stage 20 -->
+        <mxCell id="stage20" value="20. Final IDC Budget in Projectbase (Amendment Manager)\nDependent on: 18\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1940" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage18ToStage20" edge="1" source="stage18" target="stage20" parent="1" />
+        
+        <!-- Stage 21 -->
+        <mxCell id="stage21" value="21. Final IDC Budget in Tally (IDC Manager)\nDependent on: 20\nTAT: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="2040" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="stage20ToStage21" edge="1" source="stage20" target="stage21" parent="1" />
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
