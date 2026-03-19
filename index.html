@@ -111,10 +111,49 @@ transition:0.2s;
 transform:translateY(-3px);
 }
 
-.card h3{
-margin:0 0 5px 0;
+.case-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.case-card{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+transition:0.2s;
+}
+
+.case-card:hover{
+transform:translateY(-4px);
+}
+
+.case-card h3{
+margin-top:0;
 color:#1f3c88;
-font-size:16px;
+}
+
+.case-block{
+margin-bottom:8px;
+}
+
+.diagram{
+background:#f0f4ff;
+padding:8px;
+border-radius:6px;
+font-size:13px;
+text-align:center;
+margin:6px 0;
+font-weight:600;
+}
+
+.metrics{
+font-size:13px;
+background:#eef2ff;
+padding:6px;
+border-radius:6px;
+margin-top:6px;
 }
 
 .arch-box{
@@ -169,276 +208,91 @@ color:#777;
 <body>
 
 <header>
-
 <h1>Dharmendra Chauhan</h1>
-
 <p>Business Systems | Process Automation | ERP | CRM | HRMS | Operations Transformation</p>
 
 <a class="button" href="Dharmendra_Chauhan_Resume.pdf" download>
 Download Resume
 </a>
-
 </header>
-
 
 <div class="container">
 
 <div class="section">
 <h2>About Me</h2>
-
 <p>
-Business systems and operations professional with over 20 years of experience in process optimization, workflow automation, and enterprise system implementation across construction and operations-driven environments.
+Business systems and operations professional with 20+ years of experience in workflow automation, enterprise system implementation, and process optimization.
 </p>
-
 <p>
-Currently leading initiatives to implement ERP, CRM, HRMS, workflow automation systems, and dashboards that improve operational visibility, accountability, and efficiency across multiple project locations.
+Focused on building structured systems that improve visibility, accountability, and efficiency across project and operations teams.
 </p>
-
 </div>
-
 
 <div class="section">
 <h2>Key Achievements</h2>
-
 <ul>
-
-<li>Led implementation of ERP, CRM, HRMS, and Quality Management Systems improving operational visibility.</li>
-
-<li>Driving development of Project Management System (PMS) with external vendor including blueprint definition, UAT coordination, and implementation.</li>
-
-<li>Led end-to-end design and implementation of in-house labour tracking system improving cost visibility and operational control.</li>
-
-<li>Implemented HRMS with biometric integration across project sites and factory operations.</li>
-
-<li>Designed Flow Management System (FMS) for structured task tracking and accountability.</li>
-
-<li>Developed automation systems for recurring task tracking and compliance.</li>
-
-<li>Built operational dashboards using Looker Studio for management decision-making.</li>
-
-<li>Customized Zoho CRM aligned with organizational sales processes.</li>
-
-<li>Created intranet portal for centralized SOP and documentation access.</li>
-
-<li>Led system adoption using CARMA framework across teams.</li>
-
-<li>Leading a team of 6 members for workflow monitoring and governance.</li>
-
+<li>Led implementation of ERP, CRM, HRMS, and Quality Management Systems.</li>
+<li>Driving development of Project Management System (PMS) with vendor including blueprint and UAT.</li>
+<li>Led end-to-end design of labour tracking system improving cost control.</li>
+<li>Implemented HRMS with biometric integration across multiple project locations.</li>
+<li>Designed Flow Management System for workflow tracking.</li>
+<li>Developed automation systems for recurring tasks.</li>
+<li>Built dashboards for management decision-making.</li>
+<li>Led system adoption using CARMA framework.</li>
+<li>Leading team of 6 members for operations governance.</li>
 </ul>
-
 </div>
-
 
 <div class="section">
 <h2>System Design & Implementation</h2>
 
 <p><b>Project Management System (PMS)</b></p>
-<p>
-Part of core team driving development of PMS in collaboration with external vendor. Responsible for defining business requirements, preparing system blueprint, coordinating UAT, and supporting implementation for project execution teams.
-</p>
+<p>Driving blueprint, UAT and implementation with external vendor.</p>
 
-<p><b>In-house Labour Tracking System</b></p>
-<p>
-Led conceptualization and blueprint design for labour productivity tracking system (work done vs cost). Drove testing and implementation in coordination with third-party developers.
-</p>
-
-</div>
-<div class="section">
-
-<h2>Case Study: Labour Productivity Tracking System</h2>
-
-<p><b>Problem</b></p>
-<p>
-Labour cost tracking across project sites lacked visibility, making it difficult to monitor productivity and control expenditure. There was no structured system to compare work completed versus labour cost incurred.
-</p>
-
-<p><b>Approach</b></p>
-<p>
-Identified the need for a system to track labour productivity at site level. Defined key parameters including work done, labour deployment, and cost tracking. Collaborated with stakeholders to map operational requirements and designed system blueprint.
-</p>
-
-<p><b>Solution</b></p>
-<p>
-Developed a structured system to capture work progress against labour cost. Led blueprint design, coordinated with third-party developers, conducted testing, and ensured successful implementation.
-</p>
-
-<p><b>Impact</b></p>
-<ul>
-<li>Improved visibility into labour productivity across projects</li>
-<li>Enabled better cost control and decision-making</li>
-<li>Reduced dependency on manual tracking</li>
-<li>Provided structured data for management review</li>
-</ul>
-
-</div>
-<div class="section">
-
-<h2>Case Study: Procurement Workflow Optimization (FMS)</h2>
-
-<p><b>Problem</b></p>
-<p>
-Procurement cycle lacked structured tracking, leading to delays in material delivery and impacting project timelines. Average delivery cycle from requisition to material receipt was approximately 11 days with limited visibility into process bottlenecks.
-</p>
-
-<p><b>Approach</b></p>
-<p>
-Analyzed end-to-end procurement workflow from Purchase Requisition to GRN. Identified key stages including requisition creation, approval, purchase order generation, and delivery tracking. Designed a structured workflow system to ensure visibility and accountability at each stage.
-</p>
-
-<p><b>Solution</b></p>
-<p>
-Implemented Flow Management System (FMS) to track the entire procurement lifecycle — from requisition creation to approval, purchase order processing, and final delivery. Enabled real-time tracking of each stage and introduced accountability across stakeholders.
-</p>
-
-<p><b>Impact</b></p>
-
-<ul>
-
-<li>Reduced procurement cycle time from <b>11 days to 7 days</b></li>
-
-<li>Improved visibility across procurement stages</li>
-
-<li>Enabled decision-makers to identify bottlenecks and resolve delays proactively</li>
-
-<li>Aligned material delivery timelines with project execution requirements</li>
-
-<li>Reduced dependency on manual follow-ups</li>
-
-</ul>
+<p><b>Labour Tracking System</b></p>
+<p>Led design and implementation for productivity and cost tracking.</p>
 
 </div>
 
 <div class="section">
+<h2>Case Studies</h2>
 
-<h2>Case Study: Performance Management & Accountability System</h2>
+<div class="case-grid">
 
-<p><b>Problem</b></p>
-<p>
-Back-office operations lacked structured performance tracking, making it difficult to monitor individual productivity and identify non-performers in real time. Performance reviews were largely dependent on periodic appraisals, resulting in delayed feedback and limited accountability.
-</p>
-
-<p><b>Approach</b></p>
-<p>
-Identified the need for a system to track planned vs actual task timelines and measure individual performance. Designed a framework integrating Flow Management System (FMS), checklist automation, and delegation structure to ensure task ownership, timeline tracking, and performance visibility.
-</p>
-
-<p><b>Solution</b></p>
-<p>
-Implemented an integrated system combining FMS, automated checklists, and delegation workflows to track task execution. Introduced MIS-based performance scoring derived from planned vs actual timelines, enabling real-time monitoring of individual and team performance.
-</p>
-
-<p><b>Impact</b></p>
-
-<ul>
-
-<li>Enabled users to track and monitor their own performance through KPI-based scoring</li>
-
-<li>Provided HODs with real-time MIS reports to track team performance</li>
-
-<li>Improved speed of feedback for non-performers without waiting for appraisal cycles</li>
-
-<li>Increased accountability and ownership across back-office teams</li>
-
-<li>Enhanced team competitiveness and performance-driven culture</li>
-
-<li>Enabled management to identify and reward high-performing employees effectively</li>
-
-</ul>
-
+<div class="case-card">
+<h3>⚙️ Labour Productivity System</h3>
+<div class="case-block"><b>Solution</b> Work vs cost tracking system</div>
+<div class="diagram">Work → Cost → Productivity → Decision</div>
+<div class="metrics">Scale: Multi-site operations</div>
+<div class="case-block"><b>Impact</b> Improved cost visibility</div>
 </div>
 
-<div class="section">
-
-<h2>Case Study: Package Closure & Cost Control System</h2>
-
-<p><b>Problem</b></p>
-<p>
-In interior fit-out projects, multiple procurement packages needed to be closed within defined timelines and budgets. However, there was limited visibility on package status, closure timelines, and cost savings, making it difficult for procurement and management to track progress and control project costs effectively.
-</p>
-
-<p><b>Approach</b></p>
-<p>
-Identified the need for a centralized system to track package-wise procurement status, timelines, and budget utilization. Designed a structured workflow within the Flow Management System (FMS) to capture package details, expected closure timelines, and budget allocation.
-</p>
-
-<p><b>Solution</b></p>
-<p>
-Developed and implemented a Package Closure FMS enabling procurement teams to track each package from initiation to closure. The system provided real-time visibility into timelines, budget adherence, and progress across all packages.
-</p>
-
-<p><b>Impact</b></p>
-
-<ul>
-
-<li>Enabled procurement managers to track package closure timelines aligned with project schedules</li>
-
-<li>Improved visibility into budget utilization and cost savings at package level</li>
-
-<li>Provided real-time updates to management on procurement progress</li>
-
-<li>Strengthened cost control and decision-making across projects</li>
-
-<li>Reduced delays in procurement cycles through better planning and tracking</li>
-
-</ul>
-
+<div class="case-card">
+<h3>📦 Procurement Workflow</h3>
+<div class="case-block"><b>Solution</b> FMS tracking system</div>
+<div class="diagram">PR → Approval → PO → Delivery → GRN</div>
+<div class="metrics">Cycle Time: 11 → 7 days</div>
+<div class="case-block"><b>Impact</b> Faster delivery & tracking</div>
 </div>
-  
-<div class="section">
-<h2>Core Expertise</h2>
 
-<div class="skills">
-<div class="skill">ERP Implementation</div>
-<div class="skill">CRM Customization</div>
-<div class="skill">HRMS Implementation</div>
-<div class="skill">Workflow Automation</div>
-<div class="skill">Process Optimization</div>
-<div class="skill">Looker Dashboards</div>
-<div class="skill">Google Workspace</div>
+<div class="case-card">
+<h3>📊 Performance System</h3>
+<div class="case-block"><b>Solution</b> KPI tracking via FMS</div>
+<div class="diagram">Plan → Actual → Score → Feedback</div>
+<div class="metrics">Users: Cross teams</div>
+<div class="case-block"><b>Impact</b> Improved accountability</div>
+</div>
+
+<div class="case-card">
+<h3>💰 Package Closure</h3>
+<div class="case-block"><b>Solution</b> Budget + timeline tracking</div>
+<div class="diagram">Package → Budget → Timeline → Closure</div>
+<div class="metrics">Scope: Project-level procurement</div>
+<div class="case-block"><b>Impact</b> Better cost control</div>
 </div>
 
 </div>
-
-
-<div class="section">
-<h2>Systems Portfolio</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>ProjectBase ERP</h3>
-<p>ERP implementation for construction project operations.</p>
 </div>
-
-<div class="card">
-<h3>Zoho CRM</h3>
-<p>Customized CRM workflows aligned with business processes.</p>
-</div>
-
-<div class="card">
-<h3>HRMS</h3>
-<p>Labour attendance & payroll system with biometric integration.</p>
-</div>
-
-<div class="card">
-<h3>Flow Management System</h3>
-<p>Workflow system to track tasks and operational accountability.</p>
-</div>
-
-<div class="card">
-<h3>Dashboards</h3>
-<p>Real-time operational dashboards using Looker Studio.</p>
-</div>
-
-<div class="card">
-<h3>Intranet</h3>
-<p>Centralized portal for SOPs and process documentation.</p>
-</div>
-
-</div>
-
-</div>
-
 
 <div class="section">
 <h2>Operational Architecture</h2>
@@ -455,60 +309,33 @@ Developed and implemented a Package Closure FMS enabling procurement teams to tr
 
 </div>
 
-
 <div class="section">
 <h2>Career Timeline</h2>
 
 <div class="timeline">
-
-<div class="timeline-item">
-<h3>2000 — Customer Operations</h3>
-<p>Started career in customer service.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2010 — Operations Management</h3>
-<p>Handled multi-location operations.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2021 — Digital Transformation</h3>
-<p>Initiated automation and system-driven operations.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2022 — Automation Leadership</h3>
-<p>Leading ERP, CRM, HRMS, and workflow systems.</p>
+<div class="timeline-item"><h3>2000 — Customer Operations</h3></div>
+<div class="timeline-item"><h3>2010 — Operations Management</h3></div>
+<div class="timeline-item"><h3>2021 — Digital Transformation</h3></div>
+<div class="timeline-item"><h3>2022 — Automation Leadership</h3></div>
 </div>
 
 </div>
-
-</div>
-
 
 <div class="section">
 <h2>Leadership</h2>
-
-<p>
-Leading a team of 6 members responsible for workflow monitoring, system adoption, and operational governance.
-</p>
-
+<p>Leading team of 6 members driving system adoption and governance.</p>
 </div>
-
 
 <div class="section">
 <h2>Contact</h2>
-
 <div class="contact-box">
 <p>Email: dharmendrachauhan1@gmail.com</p>
 <p>Phone: +91 9819089528</p>
 <p>Location: Navi Mumbai, India</p>
 </div>
-
 </div>
 
 </div>
-
 
 <footer>
 © 2026 Dharmendra Chauhan
