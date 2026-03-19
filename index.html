@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -15,196 +14,133 @@ font-family:'Segoe UI',Arial;
 margin:0;
 background:#f5f7fb;
 color:#333;
-scroll-behavior:smooth;
 }
-
-/* HEADER */
 
 header{
 background:linear-gradient(135deg,#1f3c88,#0d6efd);
 color:white;
 text-align:center;
-padding:80px 20px;
-animation:fadeIn 1.5s ease;
+padding:50px 20px;
 }
 
 header h1{
 margin:0;
-font-size:42px;
+font-size:36px;
 }
 
 header p{
-font-size:18px;
-margin-top:10px;
+font-size:16px;
+margin-top:8px;
 }
 
 .button{
 display:inline-block;
 background:white;
 color:#0d6efd;
-padding:12px 22px;
-border-radius:6px;
+padding:10px 18px;
+border-radius:5px;
 text-decoration:none;
-margin-top:20px;
+margin-top:15px;
 font-weight:bold;
-transition:0.3s;
 }
-
-.button:hover{
-background:#e6ecff;
-transform:scale(1.05);
-}
-
-/* CONTAINER */
 
 .container{
-max-width:1100px;
+max-width:1000px;
 margin:auto;
-padding:40px 20px;
+padding:25px 20px;
 }
-
-/* SECTIONS */
 
 .section{
-margin-bottom:60px;
-opacity:0;
-transform:translateY(30px);
-animation:fadeUp 1s forwards;
+margin-bottom:35px;
 }
-
-.section:nth-child(1){animation-delay:0.2s;}
-.section:nth-child(2){animation-delay:0.4s;}
-.section:nth-child(3){animation-delay:0.6s;}
-.section:nth-child(4){animation-delay:0.8s;}
 
 .section h2{
-border-left:5px solid #0d6efd;
-padding-left:10px;
-margin-bottom:25px;
+border-left:4px solid #0d6efd;
+padding-left:8px;
+margin-bottom:15px;
+font-size:20px;
 }
 
-/* SKILLS */
+p{
+margin:8px 0;
+line-height:1.6;
+}
 
 .skills{
 display:flex;
 flex-wrap:wrap;
-gap:10px;
+gap:8px;
 }
 
 .skill{
 background:#e8f0ff;
-padding:8px 14px;
+padding:6px 12px;
 border-radius:20px;
-font-size:14px;
-transition:0.3s;
+font-size:13px;
 }
-
-.skill:hover{
-background:#0d6efd;
-color:white;
-transform:scale(1.1);
-}
-
-/* CARDS */
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
 }
 
 .card{
 background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+padding:15px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 .card h3{
-margin-top:0;
+margin:0 0 5px 0;
 color:#1f3c88;
+font-size:16px;
 }
-
-/* ARCHITECTURE */
 
 .arch-box{
 background:white;
-border:2px solid #0d6efd;
-border-radius:10px;
-padding:15px;
-width:320px;
-margin:10px auto;
-font-weight:600;
-box-shadow:0 5px 12px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.arch-box:hover{
-transform:scale(1.05);
+border:1px solid #0d6efd;
+border-radius:6px;
+padding:10px;
+width:260px;
+margin:6px auto;
+font-size:14px;
 }
 
 .arch-arrow{
 text-align:center;
-font-size:28px;
+font-size:18px;
 color:#0d6efd;
 }
 
-/* TIMELINE */
-
 .timeline{
-border-left:3px solid #0d6efd;
-padding-left:20px;
+border-left:2px solid #0d6efd;
+padding-left:12px;
 }
 
 .timeline-item{
-margin-bottom:30px;
-transition:0.3s;
-}
-
-.timeline-item:hover{
-transform:translateX(10px);
+margin-bottom:15px;
 }
 
 .timeline-item h3{
 margin:0;
+font-size:15px;
 color:#1f3c88;
 }
 
-/* CONTACT */
-
 .contact-box{
 background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+padding:15px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
-
-/* FOOTER */
 
 footer{
 text-align:center;
-padding:25px;
+padding:15px;
+font-size:12px;
 color:#777;
-}
-
-/* ANIMATIONS */
-
-@keyframes fadeIn{
-from{opacity:0;}
-to{opacity:1;}
-}
-
-@keyframes fadeUp{
-to{
-opacity:1;
-transform:translateY(0);
-}
 }
 
 </style>
@@ -225,70 +161,164 @@ Download Resume
 
 </header>
 
+
 <div class="container">
 
 <div class="section">
+
 <h2>About Me</h2>
-<p>20+ years of experience in operations, automation, and enterprise system implementation.</p>
+
+<p>
+Business systems and operations professional with over 20 years of experience in process optimization, workflow automation, and enterprise system implementation across construction and operations-driven environments.
+</p>
+
+<p>
+Currently leading initiatives to implement ERP, CRM, HRMS, workflow automation systems, and dashboards that improve operational visibility, accountability, and efficiency across multiple project locations.
+</p>
+
 </div>
 
+
 <div class="section">
+
 <h2>Core Expertise</h2>
+
 <div class="skills">
-<div class="skill">ERP</div>
-<div class="skill">CRM</div>
-<div class="skill">HRMS</div>
-<div class="skill">Automation</div>
-<div class="skill">Dashboards</div>
+
+<div class="skill">ERP Implementation</div>
+<div class="skill">CRM Customization</div>
+<div class="skill">HRMS Implementation</div>
+<div class="skill">Workflow Automation</div>
+<div class="skill">Process Optimization</div>
+<div class="skill">Looker Dashboards</div>
 <div class="skill">Google Workspace</div>
-</div>
+
 </div>
 
+</div>
+
+
 <div class="section">
+
 <h2>Systems Portfolio</h2>
+
 <div class="cards">
-<div class="card"><h3>ERP</h3><p>ProjectBase ERP Implementation</p></div>
-<div class="card"><h3>CRM</h3><p>Zoho CRM Customization</p></div>
-<div class="card"><h3>HRMS</h3><p>Biometric Attendance & Payroll</p></div>
-<div class="card"><h3>FMS</h3><p>Workflow Automation System</p></div>
-</div>
+
+<div class="card">
+<h3>ProjectBase ERP</h3>
+<p>Implemented ERP for construction project operations and reporting.</p>
 </div>
 
+<div class="card">
+<h3>Zoho CRM</h3>
+<p>Customized CRM workflows aligned with sales and customer lifecycle.</p>
+</div>
+
+<div class="card">
+<h3>HRMS</h3>
+<p>Labour attendance and payroll system with biometric integration across project sites.</p>
+</div>
+
+<div class="card">
+<h3>Flow Management System</h3>
+<p>Internal workflow system to track tasks, accountability, and operations.</p>
+</div>
+
+<div class="card">
+<h3>Dashboards</h3>
+<p>Real-time operational dashboards using Looker Studio.</p>
+</div>
+
+<div class="card">
+<h3>Intranet</h3>
+<p>Internal portal for SOPs, documentation, and knowledge sharing.</p>
+</div>
+
+</div>
+
+</div>
+
+
 <div class="section">
-<h2>Architecture</h2>
+
+<h2>Operational Architecture</h2>
+
 <div class="arch-box">Field Operations</div>
 <div class="arch-arrow">↓</div>
 <div class="arch-box">ERP | HRMS | CRM</div>
 <div class="arch-arrow">↓</div>
-<div class="arch-box">Automation Systems</div>
+<div class="arch-box">Workflow Automation (FMS)</div>
 <div class="arch-arrow">↓</div>
-<div class="arch-box">Dashboards</div>
+<div class="arch-box">Dashboards & Reporting</div>
 <div class="arch-arrow">↓</div>
-<div class="arch-box">Management</div>
+<div class="arch-box">Management Decisions</div>
+
 </div>
 
+
 <div class="section">
+
 <h2>Career Timeline</h2>
+
 <div class="timeline">
-<div class="timeline-item"><h3>2000</h3><p>Customer Operations</p></div>
-<div class="timeline-item"><h3>2010</h3><p>Operations Management</p></div>
-<div class="timeline-item"><h3>2021</h3><p>Digital Transformation</p></div>
-<div class="timeline-item"><h3>2022</h3><p>Automation Leadership</p></div>
-</div>
+
+<div class="timeline-item">
+<h3>2000 — Customer Operations</h3>
+<p>Started career in customer support and service operations.</p>
 </div>
 
+<div class="timeline-item">
+<h3>2010 — Operations Management</h3>
+<p>Handled multi-location operations and process coordination.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2021 — Digital Transformation</h3>
+<p>Initiated workflow automation and system-based operations.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2022 — Automation Leadership</h3>
+<p>Leading ERP, CRM, HRMS, and workflow automation implementation.</p>
+</div>
+
+</div>
+
+</div>
+
+
 <div class="section">
+
+<h2>Leadership</h2>
+
+<p>
+Leading a team of 6 members responsible for workflow monitoring, system adoption, and operational governance across the organization.
+</p>
+
+</div>
+
+
+<div class="section">
+
 <h2>Contact</h2>
+
 <div class="contact-box">
+
 <p>Email: dharmendrachauhan1@gmail.com</p>
 <p>Phone: +91 9819089528</p>
-</div>
+<p>Location: Navi Mumbai, India</p>
+
 </div>
 
 </div>
+
+</div>
+
 
 <footer>
+
 © 2026 Dharmendra Chauhan
+
 </footer>
 
 </body>
