@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dharmendra Chauhan | Business Systems & Process Automation</title>
+<title>Dharmendra Chauhan | Business Systems & Automation</title>
 
 <style>
 
@@ -15,18 +15,22 @@ font-family:'Segoe UI',Arial;
 margin:0;
 background:#f5f7fb;
 color:#333;
+scroll-behavior:smooth;
 }
+
+/* HEADER */
 
 header{
 background:linear-gradient(135deg,#1f3c88,#0d6efd);
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:80px 20px;
+animation:fadeIn 1.5s ease;
 }
 
 header h1{
 margin:0;
-font-size:40px;
+font-size:42px;
 }
 
 header p{
@@ -38,12 +42,20 @@ margin-top:10px;
 display:inline-block;
 background:white;
 color:#0d6efd;
-padding:12px 20px;
+padding:12px 22px;
 border-radius:6px;
 text-decoration:none;
 margin-top:20px;
 font-weight:bold;
+transition:0.3s;
 }
+
+.button:hover{
+background:#e6ecff;
+transform:scale(1.05);
+}
+
+/* CONTAINER */
 
 .container{
 max-width:1100px;
@@ -51,15 +63,27 @@ margin:auto;
 padding:40px 20px;
 }
 
+/* SECTIONS */
+
 .section{
 margin-bottom:60px;
+opacity:0;
+transform:translateY(30px);
+animation:fadeUp 1s forwards;
 }
+
+.section:nth-child(1){animation-delay:0.2s;}
+.section:nth-child(2){animation-delay:0.4s;}
+.section:nth-child(3){animation-delay:0.6s;}
+.section:nth-child(4){animation-delay:0.8s;}
 
 .section h2{
 border-left:5px solid #0d6efd;
 padding-left:10px;
 margin-bottom:25px;
 }
+
+/* SKILLS */
 
 .skills{
 display:flex;
@@ -72,7 +96,16 @@ background:#e8f0ff;
 padding:8px 14px;
 border-radius:20px;
 font-size:14px;
+transition:0.3s;
 }
+
+.skill:hover{
+background:#0d6efd;
+color:white;
+transform:scale(1.1);
+}
+
+/* CARDS */
 
 .cards{
 display:grid;
@@ -85,6 +118,12 @@ background:white;
 padding:20px;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .card h3{
@@ -92,9 +131,7 @@ margin-top:0;
 color:#1f3c88;
 }
 
-.architecture{
-text-align:center;
-}
+/* ARCHITECTURE */
 
 .arch-box{
 background:white;
@@ -105,22 +142,33 @@ width:320px;
 margin:10px auto;
 font-weight:600;
 box-shadow:0 5px 12px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.arch-box:hover{
+transform:scale(1.05);
 }
 
 .arch-arrow{
+text-align:center;
 font-size:28px;
 color:#0d6efd;
 }
 
+/* TIMELINE */
+
 .timeline{
-position:relative;
-margin:40px auto;
-padding-left:30px;
 border-left:3px solid #0d6efd;
+padding-left:20px;
 }
 
 .timeline-item{
 margin-bottom:30px;
+transition:0.3s;
+}
+
+.timeline-item:hover{
+transform:translateX(10px);
 }
 
 .timeline-item h3{
@@ -128,9 +176,7 @@ margin:0;
 color:#1f3c88;
 }
 
-.timeline-item p{
-margin:5px 0 0 0;
-}
+/* CONTACT */
 
 .contact-box{
 background:white;
@@ -139,10 +185,26 @@ border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:25px;
 color:#777;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 </style>
@@ -166,188 +228,67 @@ Download Resume
 <div class="container">
 
 <div class="section">
-
 <h2>About Me</h2>
-
-<p>
-Business systems and operations professional with over 20 years of experience in workflow automation, enterprise system implementation, and operational process improvement.
-</p>
-
-<p>
-I specialize in transforming operational processes into structured digital systems that improve efficiency, visibility, and accountability across teams and project locations.
-</p>
-
+<p>20+ years of experience in operations, automation, and enterprise system implementation.</p>
 </div>
 
 <div class="section">
-
 <h2>Core Expertise</h2>
-
 <div class="skills">
-
-<div class="skill">ERP Implementation</div>
-<div class="skill">CRM Customization</div>
-<div class="skill">HRMS Implementation</div>
-<div class="skill">Process Automation</div>
-<div class="skill">Workflow Optimization</div>
-<div class="skill">Operations Transformation</div>
-<div class="skill">Google Workspace Automation</div>
-<div class="skill">Looker Studio Dashboards</div>
-<div class="skill">MIS Reporting</div>
-
+<div class="skill">ERP</div>
+<div class="skill">CRM</div>
+<div class="skill">HRMS</div>
+<div class="skill">Automation</div>
+<div class="skill">Dashboards</div>
+<div class="skill">Google Workspace</div>
 </div>
-
 </div>
 
 <div class="section">
-
 <h2>Systems Portfolio</h2>
-
 <div class="cards">
-
-<div class="card">
-<h3>ProjectBase ERP</h3>
-<p>ERP implementation supporting construction project operations and reporting.</p>
+<div class="card"><h3>ERP</h3><p>ProjectBase ERP Implementation</p></div>
+<div class="card"><h3>CRM</h3><p>Zoho CRM Customization</p></div>
+<div class="card"><h3>HRMS</h3><p>Biometric Attendance & Payroll</p></div>
+<div class="card"><h3>FMS</h3><p>Workflow Automation System</p></div>
 </div>
-
-<div class="card">
-<h3>Zoho CRM</h3>
-<p>Customized CRM implementation aligned with sales workflows.</p>
-</div>
-
-<div class="card">
-<h3>HRMS System</h3>
-<p>Labour attendance and payroll management system integrated with biometric attendance across project locations.</p>
-</div>
-
-<div class="card">
-<h3>Flow Management System</h3>
-<p>Workflow tracking system ensuring accountability and task monitoring across departments.</p>
-</div>
-
-<div class="card">
-<h3>Operational Dashboards</h3>
-<p>Management dashboards built using Looker Studio for operational visibility.</p>
-</div>
-
-<div class="card">
-<h3>Intranet Portal</h3>
-<p>Internal knowledge portal using Google Sites to centralize SOPs and documentation.</p>
-</div>
-
-</div>
-
 </div>
 
 <div class="section">
-
-<h2>Operational Systems Architecture</h2>
-
-<div class="architecture">
-
-<div class="arch-box">Field Operations<br>Project Sites & Factory</div>
-
+<h2>Architecture</h2>
+<div class="arch-box">Field Operations</div>
 <div class="arch-arrow">↓</div>
-
-<div class="arch-box">Core Systems<br>ERP | HRMS | CRM</div>
-
+<div class="arch-box">ERP | HRMS | CRM</div>
 <div class="arch-arrow">↓</div>
-
-<div class="arch-box">Workflow Automation<br>FMS | Checklists</div>
-
+<div class="arch-box">Automation Systems</div>
 <div class="arch-arrow">↓</div>
-
-<div class="arch-box">Data & Reporting<br>Looker Studio Dashboards</div>
-
+<div class="arch-box">Dashboards</div>
 <div class="arch-arrow">↓</div>
-
-<div class="arch-box">Management Decisions</div>
-
-</div>
-
+<div class="arch-box">Management</div>
 </div>
 
 <div class="section">
-
 <h2>Career Timeline</h2>
-
 <div class="timeline">
-
-<div class="timeline-item">
-<h3>2000 — Customer Operations</h3>
-<p>Started career in customer service and support operations.</p>
+<div class="timeline-item"><h3>2000</h3><p>Customer Operations</p></div>
+<div class="timeline-item"><h3>2010</h3><p>Operations Management</p></div>
+<div class="timeline-item"><h3>2021</h3><p>Digital Transformation</p></div>
+<div class="timeline-item"><h3>2022</h3><p>Automation Leadership</p></div>
 </div>
-
-<div class="timeline-item">
-<h3>2006 — Team Leadership</h3>
-<p>Managed customer operations teams and handled escalation management.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2010 — Operations Management</h3>
-<p>Coordinated large-scale operational programs across multiple regions.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2018 — UX / Digital Operations</h3>
-<p>Worked with digital product teams on UX projects and operational workflows.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2020 — Executive Operations</h3>
-<p>Supported leadership with operational reporting, dashboards, and business coordination.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2021 — Digital Transformation Initiatives</h3>
-<p>Started driving process automation, workflow digitization, and system-based operations.</p>
-</div>
-
-<div class="timeline-item">
-<h3>2022 — Business Systems & Automation Leadership</h3>
-<p>Leading implementation of ERP, CRM, HRMS, workflow automation, and operational dashboards.</p>
-</div>
-
-</div>
-
-</div>
-<div class="section">
-
-<h2>Leadership</h2>
-
-<p>
-Currently leading a team of 6 members responsible for workflow monitoring, system adoption, and operational governance.
-</p>
-
 </div>
 
 <div class="section">
-
 <h2>Contact</h2>
-
 <div class="contact-box">
-
 <p>Email: dharmendrachauhan1@gmail.com</p>
-
 <p>Phone: +91 9819089528</p>
-
-<p>Location: Navi Mumbai, India</p>
-
-<p>
-LinkedIn:
-<a href="https://linkedin.com" target="_blank">View Profile</a>
-</p>
-
 </div>
-
 </div>
 
 </div>
 
 <footer>
-
 © 2026 Dharmendra Chauhan
-
 </footer>
 
 </body>
