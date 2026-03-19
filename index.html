@@ -42,6 +42,11 @@ border-radius:5px;
 text-decoration:none;
 margin-top:15px;
 font-weight:bold;
+transition:0.3s;
+}
+
+.button:hover{
+background:#e6ecff;
 }
 
 .container{
@@ -51,19 +56,28 @@ padding:25px 20px;
 }
 
 .section{
-margin-bottom:35px;
+margin-bottom:30px;
 }
 
 .section h2{
 border-left:4px solid #0d6efd;
 padding-left:8px;
-margin-bottom:15px;
+margin-bottom:12px;
 font-size:20px;
 }
 
 p{
-margin:8px 0;
+margin:6px 0;
 line-height:1.6;
+}
+
+ul{
+padding-left:18px;
+line-height:1.6;
+}
+
+ul li{
+margin-bottom:6px;
 }
 
 .skills{
@@ -90,6 +104,11 @@ background:white;
 padding:15px;
 border-radius:8px;
 box-shadow:0 3px 10px rgba(0,0,0,0.08);
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-3px);
 }
 
 .card h3{
@@ -120,7 +139,7 @@ padding-left:12px;
 }
 
 .timeline-item{
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
 .timeline-item h3{
@@ -165,7 +184,6 @@ Download Resume
 <div class="container">
 
 <div class="section">
-
 <h2>About Me</h2>
 
 <p>
@@ -177,43 +195,60 @@ Currently leading initiatives to implement ERP, CRM, HRMS, workflow automation s
 </p>
 
 </div>
-<div class="section">
 
+
+<div class="section">
 <h2>Key Achievements</h2>
 
 <ul>
 
-<li>Led implementation of multiple enterprise systems including ERP, CRM, HRMS, and Quality Management System.</li>
+<li>Led implementation of ERP, CRM, HRMS, and Quality Management Systems improving operational visibility.</li>
 
-<li>Currently part of core team developing Project Management System (PMS) with external vendor, contributing to blueprint documentation, UAT testing, and implementation.</li>
+<li>Driving development of Project Management System (PMS) with external vendor including blueprint definition, UAT coordination, and implementation.</li>
 
-<li>Conceptualized and independently developed blueprint for in-house labour tracking system to monitor work done vs expenditure, including testing and full implementation.</li>
+<li>Led end-to-end design and implementation of in-house labour tracking system improving cost visibility and operational control.</li>
 
-<li>Implemented HRMS for labour attendance and payroll with biometric integration across multiple project locations and factory operations.</li>
+<li>Implemented HRMS with biometric integration across project sites and factory operations.</li>
 
-<li>Designed and deployed Flow Management System (FMS) to enable structured task tracking and accountability across teams.</li>
+<li>Designed Flow Management System (FMS) for structured task tracking and accountability.</li>
 
-<li>Developed automated checklist and reminder systems to ensure completion of recurring operational activities.</li>
+<li>Developed automation systems for recurring task tracking and compliance.</li>
 
-<li>Built real-time operational dashboards using Looker Studio for management reporting and decision-making.</li>
+<li>Built operational dashboards using Looker Studio for management decision-making.</li>
 
-<li>Customized and implemented Zoho CRM workflows aligned with organizational sales processes.</li>
+<li>Customized Zoho CRM aligned with organizational sales processes.</li>
 
-<li>Created internal intranet portal using Google Sites to centralize SOPs and operational documentation.</li>
+<li>Created intranet portal for centralized SOP and documentation access.</li>
 
-<li>Led system adoption across the organization using structured CARMA framework (Create, Align, Report, Monitor & Audit).</li>
+<li>Led system adoption using CARMA framework across teams.</li>
 
-<li>Currently leading a team of 6 members responsible for workflow monitoring and operational governance.</li>
+<li>Leading a team of 6 members for workflow monitoring and governance.</li>
 
 </ul>
 
 </div>
-<div class="section">
 
+
+<div class="section">
+<h2>System Design & Implementation</h2>
+
+<p><b>Project Management System (PMS)</b></p>
+<p>
+Part of core team driving development of PMS in collaboration with external vendor. Responsible for defining business requirements, preparing system blueprint, coordinating UAT, and supporting implementation for project execution teams.
+</p>
+
+<p><b>In-house Labour Tracking System</b></p>
+<p>
+Led conceptualization and blueprint design for labour productivity tracking system (work done vs cost). Drove testing and implementation in coordination with third-party developers.
+</p>
+
+</div>
+
+
+<div class="section">
 <h2>Core Expertise</h2>
 
 <div class="skills">
-
 <div class="skill">ERP Implementation</div>
 <div class="skill">CRM Customization</div>
 <div class="skill">HRMS Implementation</div>
@@ -221,36 +256,34 @@ Currently leading initiatives to implement ERP, CRM, HRMS, workflow automation s
 <div class="skill">Process Optimization</div>
 <div class="skill">Looker Dashboards</div>
 <div class="skill">Google Workspace</div>
-
 </div>
 
 </div>
 
 
 <div class="section">
-
 <h2>Systems Portfolio</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>ProjectBase ERP</h3>
-<p>Implemented ERP for construction project operations and reporting.</p>
+<p>ERP implementation for construction project operations.</p>
 </div>
 
 <div class="card">
 <h3>Zoho CRM</h3>
-<p>Customized CRM workflows aligned with sales and customer lifecycle.</p>
+<p>Customized CRM workflows aligned with business processes.</p>
 </div>
 
 <div class="card">
 <h3>HRMS</h3>
-<p>Labour attendance and payroll system with biometric integration across project sites.</p>
+<p>Labour attendance & payroll system with biometric integration.</p>
 </div>
 
 <div class="card">
 <h3>Flow Management System</h3>
-<p>Internal workflow system to track tasks, accountability, and operations.</p>
+<p>Workflow system to track tasks and operational accountability.</p>
 </div>
 
 <div class="card">
@@ -260,7 +293,7 @@ Currently leading initiatives to implement ERP, CRM, HRMS, workflow automation s
 
 <div class="card">
 <h3>Intranet</h3>
-<p>Internal portal for SOPs, documentation, and knowledge sharing.</p>
+<p>Centralized portal for SOPs and process documentation.</p>
 </div>
 
 </div>
@@ -269,16 +302,15 @@ Currently leading initiatives to implement ERP, CRM, HRMS, workflow automation s
 
 
 <div class="section">
-
 <h2>Operational Architecture</h2>
 
 <div class="arch-box">Field Operations</div>
 <div class="arch-arrow">↓</div>
 <div class="arch-box">ERP | HRMS | CRM</div>
 <div class="arch-arrow">↓</div>
-<div class="arch-box">Workflow Automation (FMS)</div>
+<div class="arch-box">Workflow Automation</div>
 <div class="arch-arrow">↓</div>
-<div class="arch-box">Dashboards & Reporting</div>
+<div class="arch-box">Dashboards</div>
 <div class="arch-arrow">↓</div>
 <div class="arch-box">Management Decisions</div>
 
@@ -286,29 +318,28 @@ Currently leading initiatives to implement ERP, CRM, HRMS, workflow automation s
 
 
 <div class="section">
-
 <h2>Career Timeline</h2>
 
 <div class="timeline">
 
 <div class="timeline-item">
 <h3>2000 — Customer Operations</h3>
-<p>Started career in customer support and service operations.</p>
+<p>Started career in customer service.</p>
 </div>
 
 <div class="timeline-item">
 <h3>2010 — Operations Management</h3>
-<p>Handled multi-location operations and process coordination.</p>
+<p>Handled multi-location operations.</p>
 </div>
 
 <div class="timeline-item">
 <h3>2021 — Digital Transformation</h3>
-<p>Initiated workflow automation and system-based operations.</p>
+<p>Initiated automation and system-driven operations.</p>
 </div>
 
 <div class="timeline-item">
 <h3>2022 — Automation Leadership</h3>
-<p>Leading ERP, CRM, HRMS, and workflow automation implementation.</p>
+<p>Leading ERP, CRM, HRMS, and workflow systems.</p>
 </div>
 
 </div>
@@ -317,26 +348,22 @@ Currently leading initiatives to implement ERP, CRM, HRMS, workflow automation s
 
 
 <div class="section">
-
 <h2>Leadership</h2>
 
 <p>
-Leading a team of 6 members responsible for workflow monitoring, system adoption, and operational governance across the organization.
+Leading a team of 6 members responsible for workflow monitoring, system adoption, and operational governance.
 </p>
 
 </div>
 
 
 <div class="section">
-
 <h2>Contact</h2>
 
 <div class="contact-box">
-
 <p>Email: dharmendrachauhan1@gmail.com</p>
 <p>Phone: +91 9819089528</p>
 <p>Location: Navi Mumbai, India</p>
-
 </div>
 
 </div>
@@ -345,11 +372,8 @@ Leading a team of 6 members responsible for workflow monitoring, system adoption
 
 
 <footer>
-
 © 2026 Dharmendra Chauhan
-
 </footer>
 
 </body>
-
 </html>
